@@ -1,0 +1,21 @@
+<nav>
+  <div>
+    <a href="{{ .Site.BaseURL }}">
+      {{ .Site.Title }}
+    </a>
+
+    <div>
+      {{ if .Site.Menus.main }}
+      <div>
+        {{ range.Site.Menus.main }}
+        <div>
+          <a href="{{ .URL }}" title="{{ .Name }}">
+            {{ .Name }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</nav>
