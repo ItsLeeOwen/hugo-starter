@@ -4,6 +4,8 @@
 {{ define "main" }}
 product/single.html
 <div>
+  <div>PRICE::: {{ .Params.Price }}</div>
+  <div>STORE::: {{ .Params.Store }}</div>
   {{ .Content }}
 </div>
 {{ end }}
