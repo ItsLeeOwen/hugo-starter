@@ -8,28 +8,30 @@
 
 		<meta name="viewport" content="width=device-width,minimum-scale=1">
 		
-    {{ block "favicon" . }}
+    {{/*  {{ block "favicon" . }}
       {{ partial "site-favicon.html" . }}
-		{{ end }}
+		{{ end }}  */}}
 
 		{{ block "stylesheets" . }}
-			{{ partial "site-stylesheets.html" . }}
+			{{ partial "kins-stylesheets.html" . }}
 		{{ end }}
 
 		{{ block "scripts" . }}
-			{{ partial "site-scripts.html" . }}
+			{{ partial "kins-scripts.html" . }}
 		{{ end }}
   </head>
 
   <body>
 		{{ block "header" . }}
-			{{ partial "site-header.html" .}}
+			{{ partial "kins-header.html" .}}
 		{{ end }}
+
     <main role="main">
 			{{ block "main" . }}{{ end }}
-    </main>
+		</main>
+		
 		{{ block "footer" . }}
-			{{ partial "site-footer.html" . }}
+			{{ partial "kins-footer.html" . }}
 		{{ end }}
   </body>
 </html>
